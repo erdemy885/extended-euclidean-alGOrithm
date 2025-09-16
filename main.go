@@ -20,7 +20,10 @@ func main() {
 		log.Fatal("You must enter two non-negative integers")
 	}
 
+	// gets table
 	table := ExtEuc(a, b)
+
+	//prints outputs
 	fmt.Printf("Extended Euclidean Algorithm for %d and %d:\n", a, b)
 	header := "|   u_1   |   v_1   |   u_2   |   v_2   |   u_3   |   v_3   |    q    |"
 	printSep(len(header))
